@@ -11,14 +11,23 @@ body {
     @include flexDisplay();
     .container {
         @include flexDisplay();
+        color: $main-red;
         min-width: 100vw;
         min-height: 100vh;
-        background: linear-gradient(180deg, lightblue, lightcyan);
+        background: linear-gradient(180deg, $main-beige, #D4B996);
         header {
             text-align: center;
             margin: 5vh;
+            font-family: monospace;
             h1 {
                 margin: 1.5vh;
+                font-weight: 700;
+                font-size: 2.5em;
+            }
+            p {
+                font-weight: 700;
+                font-size: 1.25em;
+                font-style: italic;
             }
         }
         .items {
@@ -28,7 +37,7 @@ body {
                 list-style: none;
                 text-align: center;
                 .list-item {
-                    background: moccasin;
+                    border: 2px solid $main-red;
                     border-radius: 10px;
                     margin: 1vh;
                     @include flexDisplay();
@@ -39,6 +48,13 @@ body {
                     }
                     .delete {
                     margin: 10px;
+                    outline: none;
+                    border-radius: 5px;
+                    min-width: 50px;
+                    &:hover {
+                        color: $main-beige;
+                        background: $main-red;
+                    }
                     }
                 }
             }
@@ -50,6 +66,13 @@ body {
             input, 
             .add {
                 margin: .5vw;
+                border-radius: 5px;
+                outline: none;
+                min-width: 50px;
+                &:hover {
+                    color: $main-beige;
+                    background: $main-red;
+                }
             }
             input {
                 width: 150px;

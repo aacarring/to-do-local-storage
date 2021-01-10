@@ -17,16 +17,25 @@ body .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #A4193D;
   min-width: 100vw;
   min-height: 100vh;
-  background: linear-gradient(180deg, lightblue, lightcyan);
+  background: linear-gradient(180deg, #FFDFB9, #D4B996);
 }
 body .container header {
   text-align: center;
   margin: 5vh;
+  font-family: monospace;
 }
 body .container header h1 {
   margin: 1.5vh;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+body .container header p {
+  font-weight: 700;
+  font-size: 1.25em;
+  font-style: italic;
 }
 body .container .items {
   display: flex;
@@ -43,7 +52,7 @@ body .container .items .items-list {
   text-align: center;
 }
 body .container .items .items-list .list-item {
-  background: moccasin;
+  border: 2px solid #A4193D;
   border-radius: 10px;
   margin: 1vh;
   display: flex;
@@ -58,6 +67,13 @@ body .container .items .items-list .list-item .item {
 }
 body .container .items .items-list .list-item .delete {
   margin: 10px;
+  outline: none;
+  border-radius: 5px;
+  min-width: 50px;
+}
+body .container .items .items-list .list-item .delete:hover {
+  color: #FFDFB9;
+  background: #A4193D;
 }
 body .container .add-item {
   display: flex;
@@ -70,6 +86,14 @@ body .container .add-item {
 body .container .add-item input,
 body .container .add-item .add {
   margin: 0.5vw;
+  border-radius: 5px;
+  outline: none;
+  min-width: 50px;
+}
+body .container .add-item input:hover,
+body .container .add-item .add:hover {
+  color: #FFDFB9;
+  background: #A4193D;
 }
 body .container .add-item input {
   width: 150px;
