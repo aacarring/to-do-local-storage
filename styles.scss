@@ -1,0 +1,53 @@
+@import 'mixins.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    @include flexDisplay();
+    .container {
+        @include flexDisplay();
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(180deg, lightblue, lightcyan);
+        header {
+            text-align: center;
+            margin: 5vh;
+            h1 {
+                margin: 1.5vh;
+            }
+        }
+        .items {
+            @include flexDisplay();
+            .items-list {
+                @include flexDisplay();
+                flex-direction: row;
+                list-style: none;
+                text-align: center;
+                input,
+                .item {
+                    margin: 5px;
+                }
+                .delete {
+                    margin: 10px;
+                }
+            }
+        }
+        .add-item {
+            @include flexDisplay();
+            flex-direction: row;
+            margin: 5vh;
+            input, 
+            .add {
+                margin: .5vw;
+            }
+            input {
+                width: 150px;
+            }
+        }
+    }
+}
