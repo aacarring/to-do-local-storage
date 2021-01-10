@@ -5,8 +5,8 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,8 +17,8 @@ body .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   background: linear-gradient(180deg, lightblue, lightcyan);
 }
 body .container header {
@@ -39,15 +39,24 @@ body .container .items .items-list {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   list-style: none;
   text-align: center;
 }
-body .container .items .items-list input,
-body .container .items .items-list .item {
+body .container .items .items-list .list-item {
+  background: moccasin;
+  border-radius: 10px;
+  margin: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body .container .items .items-list .list-item input,
+body .container .items .items-list .list-item .item {
   margin: 5px;
 }
-body .container .items .items-list .delete {
+body .container .items .items-list .list-item .delete {
   margin: 10px;
 }
 body .container .add-item {

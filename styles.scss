@@ -6,13 +6,13 @@
     box-sizing: border-box;
 }
 body {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     @include flexDisplay();
     .container {
         @include flexDisplay();
-        width: 100vw;
-        height: 100vh;
+        min-width: 100vw;
+        min-height: 100vh;
         background: linear-gradient(180deg, lightblue, lightcyan);
         header {
             text-align: center;
@@ -25,15 +25,21 @@ body {
             @include flexDisplay();
             .items-list {
                 @include flexDisplay();
-                flex-direction: row;
                 list-style: none;
                 text-align: center;
-                input,
-                .item {
+                .list-item {
+                    background: moccasin;
+                    border-radius: 10px;
+                    margin: 1vh;
+                    @include flexDisplay();
+                    flex-direction: row;
+                    input,
+                    .item {
                     margin: 5px;
-                }
-                .delete {
+                    }
+                    .delete {
                     margin: 10px;
+                    }
                 }
             }
         }
