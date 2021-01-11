@@ -20,9 +20,12 @@ body {
             margin: 5vh;
             font-family: monospace;
             h1 {
-                margin: 1.5vh;
+                margin-bottom: 4vh;
                 font-weight: 700;
                 font-size: 2.5em;
+                i {
+                    font-size: .75em;
+                }
             }
             p {
                 font-weight: 700;
@@ -54,6 +57,7 @@ body {
                     &:hover {
                         color: $main-beige;
                         background: $main-red;
+                        cursor: pointer;
                     }
                     }
                 }
@@ -69,9 +73,14 @@ body {
                 border-radius: 5px;
                 outline: none;
                 min-width: 50px;
+                background: $main-beige;
+                color: $main-red;
+            }
+            .add {
                 &:hover {
                     color: $main-beige;
                     background: $main-red;
+                    cursor: pointer;
                 }
             }
             input {

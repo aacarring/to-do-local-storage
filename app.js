@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function() {
         newListItem.innerHTML = `
                     <input type="checkbox">
                     <li class="item">${addInputText}</li>
-                    <button class="delete">Delete Item</button>
+                    <button class="delete">Delete</button>
         `;
         itemsList.append(newListItem);
         addInputElement.value = "";

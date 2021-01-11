@@ -28,9 +28,12 @@ body .container header {
   font-family: monospace;
 }
 body .container header h1 {
-  margin: 1.5vh;
+  margin-bottom: 4vh;
   font-weight: 700;
   font-size: 2.5em;
+}
+body .container header h1 i {
+  font-size: 0.75em;
 }
 body .container header p {
   font-weight: 700;
@@ -74,6 +77,7 @@ body .container .items .items-list .list-item .delete {
 body .container .items .items-list .list-item .delete:hover {
   color: #FFDFB9;
   background: #A4193D;
+  cursor: pointer;
 }
 body .container .add-item {
   display: flex;
@@ -89,11 +93,13 @@ body .container .add-item .add {
   border-radius: 5px;
   outline: none;
   min-width: 50px;
+  background: #FFDFB9;
+  color: #A4193D;
 }
-body .container .add-item input:hover,
 body .container .add-item .add:hover {
   color: #FFDFB9;
   background: #A4193D;
+  cursor: pointer;
 }
 body .container .add-item input {
   width: 150px;
