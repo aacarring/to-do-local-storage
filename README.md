@@ -1,0 +1,1 @@
+A to-do list made with HTML, SCSS, CSS, and JavaScript, with functionality to add, check off, and remove items from your to-do list.
