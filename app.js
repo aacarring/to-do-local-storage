@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
     const addBtn = document.querySelector('.container .add-item .add');
     const itemsList = document.querySelector('.container .items .items-list');
+    const addInput = document.querySelector('.container .add-item input');
     
     function addItemToList() {
         let addInputElement = document.querySelector('.container .add-item input');
@@ -47,5 +48,12 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     addBtn.addEventListener('click', addItemToList);
+    addInput.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            addBtn.click();
+        }
+    });
+    
 
 });
