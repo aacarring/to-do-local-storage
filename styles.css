@@ -20,7 +20,7 @@ body .container {
   color: #A4193D;
   min-width: 100vw;
   min-height: 100vh;
-  background: linear-gradient(180deg, #FFDFB9, #D4B996);
+  background: #FFDFB9;
 }
 body .container header {
   text-align: center;
