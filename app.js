@@ -12,8 +12,10 @@ window.addEventListener('DOMContentLoaded', function() {
     
         newListItem.classList.add('list-item');
         newListItem.innerHTML = `
+                    <div class="checkbox-and-text">
                     <input type="checkbox">
                     <li class="item">${addInputText}</li>
+                    </div>
                     <button class="delete">Delete</button>
         `;
         itemsList.append(newListItem);

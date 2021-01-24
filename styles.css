@@ -95,20 +95,34 @@ body .container .items .items-list .list-item {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 75vw;
-  flex-shrink: 1;
+  justify-content: flex-start;
   flex-direction: row;
-  word-break: break-all;
+  width: 50vw;
+  min-height: 2vh;
+  flex-wrap: wrap;
 }
-body .container .items .items-list .list-item input,
-body .container .items .items-list .list-item .item {
+body .container .items .items-list .list-item .checkbox-and-text {
+  margin: 1vh 1vw;
+  display: flex;
+  flex-direction: row;
+  word-wrap: break-word;
+}
+body .container .items .items-list .list-item .checkbox-and-text input,
+body .container .items .items-list .list-item .checkbox-and-text .item {
+  display: inline;
   margin: 5px;
+}
+body .container .items .items-list .list-item .checkbox-and-text .item {
+  width: 35vw;
+  background: snow;
 }
 body .container .items .items-list .list-item .delete {
   margin: 10px;
   outline: none;
   border-radius: 5px;
   min-width: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 body .container .items .items-list .list-item .delete:hover {
   color: #FFDFB9;
