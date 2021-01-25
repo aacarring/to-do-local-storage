@@ -115,6 +115,8 @@ body .container .items .items-list .list-item .checkbox-and-text .item {
 body .container .items .items-list .list-item .checkbox-and-text .item {
   width: 35vw;
   background: snow;
+  border-radius: 5px;
+  padding: 0 1vw;
 }
 body .container .items .items-list .list-item .delete {
   margin: 10px;
