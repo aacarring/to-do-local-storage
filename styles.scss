@@ -6,34 +6,43 @@
     box-sizing: border-box;
 }
 body {
+    font-family: 'Shippori Mincho', serif;
     min-width: 100vw;
     min-height: 100vh;
     @include flexDisplay();
-    background: $main-red;
+    background: $main-blue;
     .container {
         @include flexDisplay();
-        color: $main-red;
+        color: $main-blue;
         width: 80vw;
         min-height: 100vh;
-        background: $main-beige;
+        background: $main-white;
         box-shadow: 1px 1px 15px black;
         overflow: scroll;
         header {
             text-align: center;
             margin: 5vh;
-            font-family: monospace;
             h1 {
                 margin-bottom: 4vh;
                 font-weight: 700;
-                font-size: 2em;
+                font-size: 2.5em;
                 i {
-                    font-size: .65em;
+                    font-size: .85em;
+                    margin: 5px;
                 }
             }
             p {
                 font-weight: 700;
                 font-size: 1.25em;
                 font-style: italic;
+            }
+            @media (max-width: 360px) {
+                h1 {
+                    font-size: 1.75em; 
+                    i {
+                        font-size: .85em;
+                    }
+                }
             }
             @media (max-width: 265px) {
                 h1 {
@@ -73,7 +82,7 @@ body {
                 list-style: none;
                 text-align: center;
                 .list-item {
-                    border: 2px solid $main-red;
+                    border: 2px solid $main-blue;
                     border-radius: 10px;
                     margin: 1vh;
                     @include flexDisplay();
@@ -106,10 +115,15 @@ body {
                         min-width: 50px;
                         margin-left: auto;
                         margin-right: auto;
+                        color: $main-white;
+                        background: $main-blue;
+                        border: 2px solid $main-blue;
+                        padding: 3px;
                         &:hover {
-                            color: $main-beige;
-                            background: $main-red;
+                            background: $main-white;
+                            color: $main-blue;
                             cursor: pointer;
+                            border: 2px solid $main-blue;
                         }
                         
                     }
@@ -126,19 +140,25 @@ body {
                 margin: .5vw;
                 border-radius: 5px;
                 outline: none;
+                border: 2px solid $main-blue;
                 min-width: 50px;
-                background: $main-beige;
-                color: $main-red;
+                padding: 3px;
+            }
+            .add {
+                color: $main-white;
+                background: $main-blue;
             }
             .add {
                 &:hover {
-                    color: $main-beige;
-                    background: $main-red;
+                    background: $main-white;
+                    color: $main-blue;
                     cursor: pointer;
                 }
             }
             input {
                 width: 150px;
+                outline: none;
+                border: 2px solid $main-blue;
             }
             @media (max-width: 335px) {
                 input, 
